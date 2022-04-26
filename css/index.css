@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* clear ul, li tag list-style */
+.slider .slider-wrapper,
+.slider .slider-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  width: 500px;
+  margin: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .slider-wrapper {
+  width: 3000px;
+  display: flex;
+}
+
+.slider-item img {
+  width: 500px;
+}
+/* === */
+.point-wrapper,
+.point-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.point-wrapper {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.point-wrapper .point-item {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 15px;
+  background: #fff;
+  opacity: 0.5;
+}
+
+.point-item.active,
+.point-item:hover {
+  background: #f00;
+}
